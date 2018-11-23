@@ -1,0 +1,844 @@
+/*   
+Theme Name: City Pizza
+Theme URI: wp.com
+Description: Сайт найсмачнішої піци)
+Author: Slavko
+Author URI: ваш-URI
+Version: 1.0
+*/
+
+
+/*===========fonts===========*/
+
+@font-face{
+    font-family: Krub-Regular;
+    src: url(fonts/Krub-Regular.ttf); 
+}
+
+@font-face{
+    font-family: Krub-Bold;
+    src: url(fonts/Krub-Bold.ttf); 
+}
+
+@font-face{
+    font-family: Krub-Italic;
+    src: url(fonts/Krub-Italic.ttf); 
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    font-family: Krub-Regular; 
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+a, a:hover, a:visited{
+    text-decoration: none;    
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+.grid{
+    display: grid;
+}
+
+/*---------button---------*/
+
+.button{
+    background: #fff;
+    text-transform: uppercase;
+    color: #315a2f;
+    font-size: 16px;
+    padding: 20px 70px;
+    border: 2px solid #315a2f;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background: #315a2f;
+    color: #fff;
+    border: 2px solid #315a2f;
+    transition: all 0.8s ease;
+}
+
+
+/*---------heaader---------*/
+
+
+.head-line{
+    background: #121618;
+    color: #fff;
+    height: 75px;
+}
+
+.head-servic{
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.head-servic a{
+    color: #fff;
+}
+
+.head-servic a:hover{
+    color: #315a2f;
+    transition: all 0.8s ease;
+}
+
+.head-servic i{
+    padding-right: 15px;
+}
+
+.navbar{
+    z-index: 100;
+    background: none;
+    border: none;
+    float: right;
+    margin-bottom: 0px;
+}
+
+.navbar-nav li a{
+    margin-top: 15px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    color: #fff!important;
+}
+
+.navbar-nav li a:hover{
+    border-bottom: 2px solid #315a2f;
+    transition: all 0.8s ease;
+}
+
+.phone{
+    padding-top: 15px;
+    float: right;
+}
+
+.phone ul{
+    padding-left: 0px;
+}
+
+.phone li{
+    font-weight: bold;
+}
+
+.phone i{
+    color: #315a2f;
+    padding-right: 10px;
+}
+
+.phone-hide{
+    display: none;
+}
+
+.menu-respons-color{
+    background: #121618;
+}
+
+.item{
+    height: 550px;
+}
+
+.carousel-caption{
+    background-color: rgba(0,0,0,.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.carousel-caption img{
+    width: 30%;
+}
+
+
+/*---------menu---------*/
+
+
+.eror-time{
+    text-align: center;
+}
+
+.menu-bg{
+    background: #121618;
+    color: #fff;
+}
+
+.padding-menu{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.block-pad{
+    padding-bottom: 50px;
+}
+
+.pizza-block{
+    height: 520px;
+}
+
+.pizza-block:hover{
+    padding: 10px;
+    transition: all 0.8s ease;
+    border: 2px solid #f5f5f5;
+    border-radius: 10px;
+}
+
+.pizza-img{
+    padding: 20px;
+}
+
+.pizza-img img{
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.pizza-block .pizza-text{
+    text-align: center;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.pizza-block h4{
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.pizza-block a{
+    color: #fff;
+}
+
+.pizza-line{
+    padding-bottom: 20px;
+    border-top: 2px solid #315a2f;
+}
+
+.pizza-text .pric{
+    padding-left: 70px;
+    color: #315a2f;
+}
+
+.pizza-block .pizza-text p span{
+    padding-right: 10px;
+}
+
+/*---------contact---------*/
+
+
+.contact{
+    background: #f5f5f5;
+}  
+
+.map{
+    padding: 50px 0;
+}
+
+.contact-map{
+    width: 1140px;
+    height: 350px;
+}
+
+
+/*---------footer---------*/
+
+
+.footer-line{
+    background: #121618;
+    color: #fff;
+    height: 75px;
+    border-top: 2px solid #e6e6e7;
+}
+
+.foot-servic{
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.foot-servic a{
+    color: #315a2f;
+}
+
+.foot-servic a:hover{
+    color: #fff;
+    transition: all 0.8s ease;
+}
+
+.foot-servic i{
+    padding-right: 15px;
+}
+
+.foot-logo{
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+/*---------button-up---------*/
+
+
+.button-up{
+    position: fixed;
+    bottom: -50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: #000;
+    z-index: 100;
+    outline: 0!important;
+    transition: .4s;
+}
+
+.button-up:after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 4px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.button-up.active{
+    bottom: 50px;
+}
+
+
+/*--------------page--------------*/
+
+
+.head-title{
+    text-align: center;
+}
+
+.head-title h2{
+    padding-top: 50px;
+    color: #fff;
+    font-size: 46px;
+}
+
+.title-line{
+    color: #fff;
+}
+
+.head-action-bg{
+    background: url(img/slide_img1.jpg) no-repeat 50% 50%/cover;
+    height: 200px;
+}
+
+.head-gren{
+    background-color: rgb(49,90,47,0.8);
+    width: 100%;
+    height: 200px;
+    top: 0;
+}
+
+.action-pad{
+    padding: 100px 0;
+    background: #121618;
+}
+
+.post-block{
+    padding: 30px 0;
+    color: #fff;
+}
+
+.post-text{
+    padding: 50px;
+}
+
+.post-text img{
+    display: none;
+}
+
+.post-text h3{
+    color: #fff;
+    font-weight: bold;
+}
+
+.post-line{
+    padding-top: 15px;
+    width: 70px;
+    border-bottom: 3px solid #315a2f;
+}
+
+.post-text p{
+    padding-top: 30px;
+}
+
+
+/*--------------contact------------*/
+
+
+.head-contact-bg{
+    background: url(img/slide_img2.jpg) no-repeat 50% 50%/cover;
+    height: 200px;
+}
+
+.contact-pad{
+    padding-top: 50px;
+}
+
+.contact-item-pad{
+    padding-bottom: 50px;
+}
+
+.contact-info{
+    background: #fff;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.contact-item{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #F8F8F8;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.15);
+}
+
+.contact-item:hover{
+    background: #F8F8F8;
+    border: none;
+    transition: all 0.8s ease;
+    border: 1px solid #F8F8F8; 
+}
+
+.contact-item h3{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.contact-item p{
+    color: #545454;
+}
+
+.contact-icon-style{
+    padding-bottom: 10px;
+    font-size: 46px;
+    color: #315a2f;
+}  
+
+.contact-map-bg{
+    background: #121618;
+}
+
+.messenger-contact{
+    padding-top: 60px;
+}
+
+.messenger-contact h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.messenger-pad{
+    padding-top: 40px;
+}
+
+.input-style{
+    padding-bottom: 20px;
+}
+
+.form-reg{
+    padding-right: 180px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.15);
+    background: ;
+}
+
+.form-coment{
+    width: 1140px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.15);
+}
+
+.contact-button{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+
+/*-----------pizza-single----------*/
+
+
+.head-single-bg{
+    background: url(img/pizza%202.jpg) no-repeat 50% 50%/cover;
+    height: 200px;
+}
+
+.pizza-pad{
+    background: #121218;
+    padding: 50px 0;
+}
+
+.pizza-img-page{
+    padding: 60px;
+}
+
+.pizza-img-page img{
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.pizza-text-page{
+    padding: 50px;
+    color: #fff;
+}
+
+.pizza-text-page h2{
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #315a2f;
+    width: 50%;
+}
+
+.pizza-text-page p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pizza-text-page .pric{
+    padding-left: 100px;
+}
+
+.pizza-galery{
+    padding-top: 50px;
+}
+
+
+.recent{
+    position: relative;
+    display: block;
+}
+
+.recent:hover .info{
+    display: block!important;
+    position: absolute;
+    transition: all 0.8s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg_serch.png) no-repeat 50% 50% rgba(0,0,0,.50);
+}
+
+
+/*-------------gallery--------------*/
+
+.head-gallery-bg{
+    background: url(img/pizza%202.jpg) no-repeat 50% 50%/cover;
+    height: 200px;
+}
+
+.gallery-bg{
+    background: #121218;
+    padding: 100px 0;
+}
+
+
+
+/*================media==============*/
+
+@media only screen and (max-width:2000px){
+    
+    .carousel-caption img{
+        width: 20%;
+    }
+}
+
+
+@media only screen and (max-width:1366px){
+   .carousel-caption img{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:992px){    
+    .contact-map{
+        width: 935px;
+    }
+    
+    .form-coment{
+        width: 940px;
+    }
+    
+    .contact-respons{
+        padding-bottom: 16px;
+    }
+}
+
+/* iPhone X width */
+
+@media only screen and (max-width:882px){
+    
+    .navbar-nav li a{
+        margin-right: 0px;
+    }
+    
+    .item{
+        height: 400px;
+    }
+
+    .carousel-caption img{
+        width: 30%;
+    }
+    
+    .contact-map{
+        width: 720px;
+    }
+    
+    .form-coment{
+        width: 720px;
+    }
+   
+}
+
+@media only screen and (max-width:768px){
+    
+    .post-text{
+        padding-top: 0px;
+    }
+    
+    .pizza-img-page{
+        padding: 30px;
+    }
+    
+    .pizza-text-page{
+        padding: 10px;
+    }
+    
+    .pizza-respons-gallery{
+        padding-top: 20px;
+    }
+}
+
+/* iPhone 6/7/8 Plus samsung s9 width */
+
+@media only screen and (max-width:740px){
+    
+    .navbar-toggle{
+        margin-top: 20px;
+        border: none;
+        background: none;
+    }
+    
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+        background: none;
+    }
+    
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+     
+    .navbar-nav li a:hover{
+        border-bottom: none;
+    }
+    
+    .navbar-nav li a{
+        margin-top: 0px;
+    }
+    
+    .navbar{
+        background: #121618;
+    }
+    
+    .phone-hide{
+        display: block;    
+    }
+    
+    .carousel-caption img{
+        padding-top: 30px;
+    }
+    
+    .pizza-img-page{
+        padding: 70px;
+    }
+    
+    .foot-logo{
+        display: none;
+    }
+}
+
+/* iPhone 6/7/8 Plus width */
+
+@media only screen and (max-width:736px){
+   
+}
+
+/* iPhone 6/7/8  width */
+
+@media only screen and (max-width:667px){
+    
+    .contact-map{
+        width: 620px;
+    }
+    
+    .form-coment{
+        width: 620px;
+    }
+}
+
+/* iPhone 5/SE  width */
+
+@media only screen and (max-width:568px){
+    
+    .item{
+        height: 300px;
+    }
+
+    .contact-map{
+        width: 540px;
+    }
+    
+    .form-coment{
+        width: 540px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    
+    .contact-map{
+        width: 445px;
+    }
+    
+    .form-coment{
+        width: 445px;
+    }
+    
+    .button{
+        padding: 10px 40px;
+    }
+
+    .foot-logo{
+        display: none;
+    }
+    
+    .pizza-img{
+        padding: 50px;
+    }
+    
+    .post-text{
+        padding: 0;
+    }
+    
+    .post-text img{
+        display: block;
+    }
+    
+    .respons-hide img{
+        display: none;
+    }
+    
+    .pizza-img-page{
+        padding: 50px;
+    }
+}
+
+
+/* iPhone 6/7/8 Plus */
+
+
+@media only screen and (max-width:414px){
+    
+    .item{
+        height: 250px;
+    }
+    
+     .contact-map{
+        width: 385px;
+    }
+    
+    .form-coment{
+        width: 365px;
+    }
+    
+    .pizza-img{
+        padding: 30px;
+    }
+  
+}
+
+/* iPhone 6/7/8 and X */
+
+
+@media only screen and (max-width:375px){
+    
+    .item{
+        height: 200px;
+    }
+    
+    .carousel-caption h3{
+        display: none;    
+    }
+    
+     .contact-map{
+        width: 345px;
+    }
+    
+    .form-coment{
+        width: 345px;
+    }
+    
+    .pizza-img{
+        padding: 30px;
+    }
+  
+}
+
+/* samsung galaxy s5 */
+
+
+@media only screen and (max-width:360px){
+    
+     .contact-map{
+        width: 330px;
+    }
+    
+    .form-coment{
+        width: 330px;
+    }
+    
+    .pizza-img{
+        padding: 30px;
+    }
+    
+}
+
+@media only screen and (max-width:320px){
+    
+     .contact-map{
+        width: 290px;
+    }
+    
+    .form-coment{
+        width: 290px;
+    }
+    
+    .pizza-img{
+        padding: 30px;
+    }
+}
